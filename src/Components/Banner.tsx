@@ -1,8 +1,8 @@
 import React from "react";
-// import Img from "../assets/koreaBg1.jpg";
-import Img2 from "../assets/koreaBg2.jpg";
-import Img3 from "../assets/koreaBg3.jpg";
-import illust from "../assets/illust.jpg";
+import Img from "../Imgs/koreabg1.jpg";
+import Img2 from "../Imgs/koreabg2.jpg";
+import Img3 from "../Imgs/koreabg3.jpg";
+import illust from "../Imgs/illust.jpg";
 
 export const Banner = () => {
 	return (
@@ -10,7 +10,7 @@ export const Banner = () => {
 			<div className="banner-main">
 				<div className="banner-info">
 					<div className="img-box one">
-						<img src={Img2} alt="korea-Img" />
+						<img src={Img} alt="korea-Img" />
 					</div>
 					<p>
 						ようこそ <br />
