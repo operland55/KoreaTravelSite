@@ -1,8 +1,8 @@
 import React from "react";
-import Img from "../Imgs/koreabg1.jpg";
-import Img2 from "../Imgs/koreabg2.jpg";
-import Img3 from "../Imgs/koreabg3.jpg";
-import illust from "../Imgs/illust.jpg";
+import Img from "../assets/koreabg1.jpg";
+import Img2 from "../assets/koreabg2.jpg";
+import Img3 from "../assets/koreabg3.jpg";
+import illust from "../assets/illust.jpg";
 
 export const Banner = () => {
 	return (
