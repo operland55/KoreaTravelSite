@@ -53,9 +53,9 @@
 			}
 		}
 		.illust {
-			width: 250px;
+			width: 200px;
 			position: absolute;
-			top: 250px;
+			top: 200px;
 			right: 0;
 			animation: opacity 1500ms ease-in-out;
 			img {
@@ -79,6 +79,7 @@
 			margin: 0 auto;
 		}
 		.illust {
+			width: 250px;
 			left: 50%;
 		}
 	}
