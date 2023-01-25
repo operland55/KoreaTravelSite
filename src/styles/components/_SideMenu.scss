@@ -1,0 +1,46 @@
+.sideMenu {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+	background-color: #262626;
+	color: #fff;
+	overflow: hidden;
+	transition: 1000ms;
+	z-index: 1000;
+	transform: translateX(100%);
+	&.active {
+		transform: translateX(0%);
+	}
+	.sideMain {
+		header {
+			width: 100%;
+			margin-top: 10px;
+			text-align: right;
+			svg {
+				font-size: 22px;
+				cursor: pointer;
+			}
+		}
+
+		ul {
+			@include column-flexbox(start, start);
+			padding-top: 20px;
+			font-weight: 700;
+			gap: 30px;
+			li {
+				cursor: pointer;
+			}
+		}
+		.contact {
+			margin-top: 35px;
+			margin-left: 20px;
+			background-color: #111;
+			p {
+				padding: 20px;
+				font-size: 12px;
+			}
+		}
+	}
+}
