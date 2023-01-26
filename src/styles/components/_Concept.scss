@@ -1,0 +1,138 @@
+.concept-wrapper {
+	padding-top: 50px;
+	.concept {
+		position: relative;
+
+		.concept-pho1,
+		.concept-pho2,
+		.concept-pho3 {
+			position: absolute;
+			img {
+				@include img-style;
+			}
+		}
+		.concept-pho1 {
+			width: 22vw;
+			top: 100px;
+		}
+		.concept-pho2 {
+			width: 24vw;
+			top: 90vw;
+			right: 0;
+		}
+		.concept-pho3 {
+			width: 66vw;
+			height: 75vw;
+			top: 140px;
+			right: 6.933vw;
+			z-index: 10;
+			img {
+				height: 100%;
+			}
+		}
+		.concept-text {
+			padding-top: 120vw;
+			width: 90vw;
+			margin: 0 auto;
+
+			.concept-font {
+				.en-title {
+					font-size: 44px;
+					font-weight: 400;
+					line-height: 1.1;
+				}
+				.ja-title {
+					font-weight: 700;
+					font-size: 18px;
+					margin-top: 20px;
+				}
+				p {
+					font-size: 14px;
+					margin-top: 30px;
+					line-height: 1.5;
+				}
+				.view {
+					margin-top: 35px;
+					width: 235px;
+					button {
+						width: 100%;
+						line-height: 52px;
+						background-color: #111;
+						color: #fff;
+						transition: 150ms ease-in-out;
+					}
+					button:hover {
+						color: #262626;
+						background: #fff;
+						box-shadow: 0 0 0 1px #262626 inset;
+					}
+				}
+			}
+		}
+	}
+	@include responsive(T) {
+		.concept {
+			.concept-text {
+				.concept-font {
+					// width: 38%;
+					.en-title {
+						font-size: 54px;
+					}
+					.ja-title {
+						font-size: 22px;
+						letter-spacing: 1.5px;
+					}
+					p {
+						font-size: 16px;
+					}
+					.view {
+						// width: 100%;
+					}
+				}
+			}
+		}
+	}
+	@include responsive(D) {
+		.concept {
+			.concept-pho1,
+			.concept-pho2 {
+				width: 13.02083333vw;
+			}
+			.concept-pho2 {
+				position: absolute;
+				top: 48vw;
+				right: 5vw;
+			}
+			.concept-text {
+				@include flexbox(between);
+				padding-top: 250px;
+				width: 75.75vw;
+				margin: 0 5.25vw 0 auto;
+
+				.concept-font {
+					margin-right: 6.3175%;
+					.en-title {
+						font-size: 6.5vh;
+					}
+					.ja-title {
+						margin-top: 36px;
+						font-size: 2vh;
+						line-height: 2;
+					}
+					p {
+						margin-top: 32px;
+						font-size: 16px;
+						line-height: 2.5;
+					}
+				}
+				.concept-pho3 {
+					position: relative;
+					top: 0;
+					margin-left: 30px;
+					width: 40vw;
+					height: 46vw;
+				}
+			}
+		}
+	}
+}
