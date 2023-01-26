@@ -29,7 +29,20 @@
 			font-weight: 700;
 			gap: 30px;
 			li {
+				position: relative;
 				cursor: pointer;
+			}
+			li:before {
+				bottom: -5px;
+				position: absolute;
+				content: "";
+				width: 0%;
+				height: 1px;
+				background-color: red;
+				transition: 200ms ease-in-out;
+			}
+			li:hover::before {
+				width: 100%;
 			}
 		}
 		.contact {
