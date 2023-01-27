@@ -2,10 +2,10 @@ import img from "../src/assets/concept1.jpg";
 
 import tripImg from "../src/assets/tripImg.jpg";
 import tripImg2 from "../src/assets/tripImg2.jpg";
-import tripImg3 from "../src/assets/tripImg3.jpg";
-import tripImg4 from "../src/assets/tripImg4.jpg";
-import tripImg5 from "../src/assets/tripImg5.jpg";
-import tripImg6 from "../src/assets/tripImg6.jpg";
+import tripImg3 from "../src/assets/tripImg2.jpg";
+import tripImg4 from "../src/assets/tripImg2.jpg";
+import tripImg5 from "../src/assets/tripImg2.jpg";
+import tripImg6 from "../src/assets/tripImg2.jpg";
 
 export const navObj = [
 	{
