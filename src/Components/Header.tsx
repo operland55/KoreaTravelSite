@@ -8,7 +8,7 @@ export const Header = () => {
 		<>
 			<div className="header-wrapper">
 				<header>
-					<h1>旅行</h1>
+					<h1 className="sm-hidden">旅行</h1>
 					<AiOutlineMenu
 						className="sm-only"
 						onClick={() => {
