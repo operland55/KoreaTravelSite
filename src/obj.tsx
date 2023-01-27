@@ -1,4 +1,5 @@
 import img from "../src/assets/concept1.jpg";
+
 import tripimg from "../src/assets/tripimg.jpg";
 import tripimg2 from "../src/assets/tripimg2.jpg";
 import tripimg3 from "../src/assets/tripimg3.jpg";
