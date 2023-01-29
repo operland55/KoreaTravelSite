@@ -1,0 +1,109 @@
+.reportWrapper {
+	padding: 90px 0;
+
+	.report {
+		.en-title {
+			width: 87.923vw;
+			max-width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			h1 {
+				font-size: 44px;
+				font-weight: 400;
+				line-height: 1.1;
+			}
+			p {
+				margin-top: 30px;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 1.7;
+			}
+		}
+
+		.report-lists {
+			li {
+				padding: 50px 0;
+				height: 100%;
+				width: 310px;
+				margin: 0 auto;
+				.img-box {
+					margin: 0 auto;
+					width: 310px;
+					height: 207px;
+					img {
+						@include img-style;
+						height: 100%;
+						object-fit: fill;
+					}
+				}
+				.name {
+					margin-top: 20px;
+					text-align: center;
+				}
+				.info {
+					margin-top: 20px;
+					font-size: 12px;
+					text-align: center;
+				}
+				.thumb-dest {
+					@include flexbox;
+					margin-top: 20px;
+					gap: 10px;
+					.logo-box {
+						width: 36px;
+						height: 36px;
+						img {
+							@include img-style;
+							height: 100%;
+							border-radius: 50%;
+						}
+					}
+					p {
+						font-size: 12px;
+						color: rgb(172, 171, 171);
+					}
+				}
+			}
+		}
+	}
+	@include responsive(D) {
+		.report {
+			.en-title {
+				h1 {
+					font-size: 72px;
+				}
+				p {
+					font-size: 24px;
+				}
+			}
+
+			.report-lists {
+				max-width: 1632px;
+				margin: 0 auto;
+				.swiper {
+					@include flexbox(between);
+
+					li {
+						margin-top: 30px;
+						width: 100%;
+						padding: 0 20px;
+						max-width: 323px;
+						.img-box {
+							width: 100%;
+						}
+						.info {
+							font-size: 14px;
+							text-align: left;
+							overflow-x: hidden;
+						}
+						.thumb-dest {
+							@include flexbox;
+							justify-content: flex-start;
+						}
+					}
+				}
+			}
+		}
+	}
+}
