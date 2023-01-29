@@ -9,6 +9,7 @@
 				width: 100%;
 				font-size: 44px;
 				font-weight: 400;
+				line-height: 1.1;
 			}
 			p {
 				margin-top: 24px;
@@ -21,6 +22,7 @@
 			gap: 50px 0px;
 			li {
 				width: 42%;
+				overflow: hidden;
 				.img-box {
 					cursor: pointer;
 					position: relative;
@@ -28,6 +30,10 @@
 					img {
 						@include img-style;
 						height: 100%;
+					}
+					img:hover {
+						opacity: 0.8;
+						transform: scaleX(1.05) scaleY(1.05);
 					}
 					.location {
 						position: absolute;
@@ -140,6 +146,13 @@
 	}
 	@include responsive(D) {
 		.trip {
+			.en-title {
+				width: 70.923vw;
+				margin: 0 auto;
+				h1 {
+					font-size: 70px;
+				}
+			}
 			.trip-info {
 				width: 87.923vw;
 				max-width: 1536px;
